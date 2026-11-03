@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "name": "Utrecht",
+      "valid": true,
+      "relativeAreaChange": 4.8e-05
+    },
+    {
+      "name": "Zuid-Holland",
+      "valid": true,
+      "relativeAreaChange": 1.7e-05
+    },
+    {
+      "name": "Noord-Holland",
+      "valid": true,
+      "relativeAreaChange": 4e-05
+    },
+    {
+      "name": "Lek",
+      "segments": 13,
+      "lengthKm": 58.7,
+      "assessmentReady": false
+    },
+    {
+      "name": "Nieuwe Maas",
+      "segments": 42,
+      "lengthKm": 23.55,
+      "assessmentReady": false
+    },
+    {
+      "name": "Nieuwe Waterweg",
+      "segments": 3,
+      "lengthKm": 6.65,
+      "assessmentReady": false
+    },
+    {
+      "name": "Noordzeekanaal",
+      "segments": 17,
+      "lengthKm": 18.81,
+      "assessmentReady": false
+    },
+    {
+      "name": "Amsterdam-Rijnkanaal",
+      "segments": 21,
+      "lengthKm": 72.59,
+      "assessmentReady": false
+    }
+  ],
+  "vleutenInsideUtrecht": true,
+  "note": "Technische datacontrole, geen volledige onderwijsinhoudelijke acceptatie."
+}

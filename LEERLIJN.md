@@ -1,15 +1,13 @@
-# Topohelden – voortgang ontwikkelversie
+# Leerroute en vrije keuze
 
-F1: 36 namen West-Nederland, indicatieve punten.
-F2: mobiele indeling en voorgestelde route groep 4–8. Alleen groep 6 periode 1 bevat leerstof.
-F3: maximaal tien kaartvragen per reeks, steden aanwijzen of herkennen.
-F4: score lokaal bewaren, fouten opnieuw oefenen en voortgang per geselecteerde stad. Na twee goede antwoorden achter elkaar verdwijnt de stad uit extra herhalen.
+De groep is het eerste overzicht, geen beperking op de bibliotheek.
 
-## Nog te doen
-- Geografische punten controleren; echte lijnen en polygonen toevoegen.
-- Meer lijsten en aardrijkskundelessen.
-- Voortgang per leerling en synchronisatie.
-- Echte iPhone/iPad-test en controle van live kaarttegels.
-- Herhaling plannen met tijdsintervallen.
+| Groep | Voorgestelde richting |
+|---|---|
+| 4 | Kaartbegrip, legenda, windrichtingen, eigen omgeving |
+| 5 | Nederland: gebieden, provincies, steden en wateren |
+| 6 | Nederland verdiepen; optioneel Europa |
+| 7 | Europa: landen, hoofdsteden, landschappen en wateren |
+| 8 | Wereld: continenten, landen, oceanen en landschappen |
 
-De leerroute is een voorstel; de indeling per groep is niet officieel door SLO voorgeschreven.
+Alleen West-Nederland heeft nu data. Dezelfde lijst kan met eigen selecties in meerdere groepen en periodes worden gebruikt. Overige leerstof is gepland. Deze verdeling is niet officieel door SLO per groep voorgeschreven. Zie BESLUITEN_EN_STATUS.md.
