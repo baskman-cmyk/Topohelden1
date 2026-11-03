@@ -1,0 +1,11 @@
+Topohelden – nieuwe inhoud en kaartfix
+
+Pak deze zip uit en upload ALLE bestanden uit deze zip samen naar de hoofdmap van Topohelden1. Vervang bestanden met dezelfde naam. Je hoeft geen mappen aan te maken.
+
+Benodigd: index.html, topo.css, geodata.js, leaflet.js, leaflet.css, lessons.js, geography.js. LEAFLET_LICENSE.txt moet bij de verspreide kaartbibliotheek blijven.
+
+Dit vervangt de eerdere upload met slechts drie app-bestanden. Deze versie gebruikt geen CARTO en vraagt geen kaart-API-sleutel. De meegeleverde achtergrond is een provinciekaart, geen gedetailleerde straatkaart.
+
+Na publicatie de pagina herladen; sluit en heropen de tab als de oude versie nog zichtbaar is. Nieuwe bestanden hebben versieparameters om oude cache te vermijden.
+
+Aardrijkskunde: twee lessen per groep 4–8, samen 10 lessen en 30 vragen. Lesresultaten blijven op dit apparaat bewaard, los van topografie.
