@@ -1,5 +1,6 @@
 (function(){
  'use strict';
+ const appStorage=window.TopoStorage||localStorage;
  const lessons=window.TopoLessons?.lessons||[];
  const byId=id=>lessons.find(l=>l.id===id);
  const el=id=>document.getElementById(id);
@@ -7,7 +8,7 @@
  function load(){
   const clean={progress:{},sessions:{}};
   try{
-   const v=JSON.parse(localStorage.getItem('topo-geography-v1'));
+   const v=JSON.parse(appStorage.getItem('topo-geography-v1'));
    for(const l of lessons){
     const p=v?.progress?.[l.id],n=l.questions.length;
     if(p?.version===l.version&&Number.isSafeInteger(p.attempts)&&p.attempts>0&&Number.isSafeInteger(p.best)&&p.best>=0&&p.best<=n&&Number.isSafeInteger(p.last)&&p.last>=0&&p.last<=p.best)clean.progress[l.id]={version:l.version,attempts:p.attempts,best:p.best,last:p.last};
@@ -18,7 +19,7 @@
   return clean;
  }
  let state=load(),currentId=null;
- function save(){try{localStorage.setItem('topo-geography-v1',JSON.stringify(state));el('geographyStorageNotice').hidden=true}catch{el('geographyStorageNotice').hidden=false}}
+ function save(){try{appStorage.setItem('topo-geography-v1',JSON.stringify(state));el('geographyStorageNotice').hidden=true}catch{el('geographyStorageNotice').hidden=false}}
  function fresh(l){return {version:l.version,phase:'reading',step:0,answers:Array(l.questions.length).fill(null),recorded:false}}
  function result(l,s){return s.answers.reduce((n,a,i)=>n+(a===l.questions[i].answer?1:0),0)}
  function renderOverview(grade){
@@ -56,6 +57,7 @@
    const terms=tag('dl',undefined,'lesson-terms');for(const [word,meaning] of Object.entries(l.terms))terms.append(tag('dt',word),tag('dd',meaning));body.append(terms);
    const details=tag('details'),summary=tag('summary','Bronnen en verantwoording');details.append(summary,tag('p','Eigen uitleg en oefenvragen van Topohelden. De onderstaande bronnen zijn gebruikt voor controle van de feiten. De groepsindeling is een voorstel.','small'));
    for(const src of l.sources){const a=tag('a',src.title);a.href=src.url;a.target='_blank';a.rel='noopener noreferrer';const p=tag('p');p.append(a);details.append(p)}body.append(details);
+   if(l.mission&&window.MissionsApp){const missionButton=tag('button','Probeer het met kaartjes','secondary');missionButton.onclick=()=>window.MissionsApp.open(l.mission);body.append(missionButton)}
    const b=tag('button','Start de '+l.questions.length+' vragen','primary');b.onclick=()=>begin();body.append(b);
   }else if(s.phase==='quiz'){
    const q=l.questions[s.step],chosen=s.answers[s.step];

@@ -1,11 +1,10 @@
-Topohelden – nieuwe inhoud en kaartfix
+Topohelden digitaal leerplatform — 4 november 2026
 
-Pak deze zip uit en upload ALLE bestanden uit deze zip samen naar de hoofdmap van Topohelden1. Vervang bestanden met dezelfde naam. Je hoeft geen mappen aan te maken.
+Pak deze zip uit. Upload ALLE bestanden samen naar de hoofdmap van Topohelden1. Geen mappen uploaden.
+Ook de nieuwe bestanden digital.js en profiles.js moeten mee.
+Open de website na publiceren opnieuw. De voettekst vermeldt: digitaal leerplatform · 4 november 2026.
 
-Benodigd: index.html, topo.css, geodata.js, leaflet.js, leaflet.css, lessons.js, geography.js. LEAFLET_LICENSE.txt moet bij de verspreide kaartbibliotheek blijven.
+Volledig digitaal: lessen, werkkaarten, eigen notities, oefenen en toetsen. Geen papieren doeboek of verplichte download. Digibordlessen staan onder Inhoud of bij het verhaal. Profielen toevoegen en het gezamenlijke lokale overzicht staan onder Doeboek aanpassen.
 
-Dit vervangt de eerdere upload met slechts drie app-bestanden. Deze versie gebruikt geen CARTO en vraagt geen kaart-API-sleutel. De meegeleverde achtergrond is een provinciekaart, geen gedetailleerde straatkaart.
-
-Na publicatie de pagina herladen; sluit en heropen de tab als de oude versie nog zichtbaar is. Nieuwe bestanden hebben versieparameters om oude cache te vermijden.
-
-Aardrijkskunde: twee lessen per groep 4–8, samen 10 lessen en 30 vragen. Lesresultaten blijven op dit apparaat bewaard, los van topografie.
+Bestaand werk blijft bij het eerste profiel bewaard; de naam daarvan kun je veranderen. Elk nieuw profiel krijgt eigen werk en resultaten. Alles blijft lokaal per browser/apparaat, zonder wachtwoorden of centrale schoolsynchronisatie.
+Geen API-sleutel nodig. 14 voorbeeldhoofdstukken vormen nog geen volledig jaarprogramma.
