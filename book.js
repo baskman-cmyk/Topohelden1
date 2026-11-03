@@ -38,14 +38,14 @@
  function open(id){const c=byId(id);if(!c)return;current=id;state.cursor[c.grade]=id;session(c);save();show('book');render();window.scrollTo(0,0)}
  function continueBook(){open(cursor(activeGrade))}
  function render(){
-  if(rendering)return;rendering=true;map?.remove();map=null;mounted=null;
+  if(rendering)return;rendering=true;window.StoryApp?.leave();map?.remove();map=null;mounted=null;
   const c=byId(current),s=session(c),host=$('bookBody');host.replaceChildren();$('bookTitle').textContent=c.title;$('bookSubtitle').textContent='Groep '+c.grade+' · '+c.goal;
   const tabs=$('bookStages');tabs.replaceChildren();for(const [i,label] of ['Verhaal & uitleg','Doen','Oefenen','Afronden'].entries()){const b=btn(label,()=>go(i),'book-stage');b.disabled=i>s.phase&&!s.finished;b.setAttribute('aria-current',i===s.phase?'step':'false');tabs.append(b)}
   if(s.phase===0)reading(c,s,host);if(s.phase===1)activity(c,s,host);if(s.phase===2)practice(c,s,host);if(s.phase===3)finishPage(c,s,host);
   rendering=false;renderHome();
  }
  function reading(c,s,host){
-  host.append(text('p','Je hoeft dit nog niet te weten. We ontdekken het samen.','book-kicker'),text('h2',c.storyTitle),text('p',c.story,'book-story'));
+  if(!window.StoryApp?.mount(c,host))host.append(text('p','Je hoeft dit nog niet te weten. We ontdekken het samen.','book-kicker'),text('h2',c.storyTitle),text('p',c.story,'book-story'));
   host.append(text('h2','Zo zit het'));for(const p of c.paragraphs)host.append(text('p',p));
   const terms=text('dl',undefined,'lesson-terms');for(const [word,meaning] of Object.entries(c.terms))terms.append(text('dt',word),text('dd',meaning));host.append(terms);
   if(c.activity.type==='province'){host.append(text('h2','Kijk eerst naar de ingevulde kaart'),text('p','Tik op een provincie om de naam te zien. We gebruiken West-Nederland als voorbeeld: Noord-Holland, Zuid-Holland en Utrecht. Bij Doen oefen je met dezelfde kaart zonder namen.'));provinceMap(host,{target:c.activity.target},{},true,()=>{})}

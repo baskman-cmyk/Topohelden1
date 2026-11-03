@@ -1,10 +1,10 @@
-Topohelden digitaal leerplatform — 4 november 2026
+Topohelden — groep 6, vier periodes — 4 november 2026
 
-Pak deze zip uit. Upload ALLE bestanden samen naar de hoofdmap van Topohelden1. Geen mappen uploaden.
-Ook de nieuwe bestanden digital.js en profiles.js moeten mee.
-Open de website na publiceren opnieuw. De voettekst vermeldt: digitaal leerplatform · 4 november 2026.
+Pak de zip uit en upload ALLE bestanden samen naar de hoofdmap van Topohelden1. Geen mappen nodig. Ook de nieuwe bestanden extra-data.js en year.js moeten mee.
+Open na publiceren de website opnieuw. Onderaan staat: Topohelden · groep 6 · vier periodes · 4 november 2026.
 
-Volledig digitaal: lessen, werkkaarten, eigen notities, oefenen en toetsen. Geen papieren doeboek of verplichte download. Digibordlessen staan onder Inhoud of bij het verhaal. Profielen toevoegen en het gezamenlijke lokale overzicht staan onder Doeboek aanpassen.
+Groep 6: West, Noord, Oost en Zuid. Alle twaalf provincies met verhaal, vragen, hoofdstad en kaarttraining. Eigen basisselectie van 99 namen: 98 kaartobjecten en één Randstad-relatievraag. Geen harde Randstadgrens; Rijn betekent in de West-les expliciet de Oude Rijn.
+Jaaroverzicht, digibordlessen en een eindronde met 24 vragen en foutenherhaling. De eindronde is een steekproef, geen volledige toets van alle 99 namen. Kaarten ondersteunen zoomen en slepen.
 
-Bestaand werk blijft bij het eerste profiel bewaard; de naam daarvan kun je veranderen. Elk nieuw profiel krijgt eigen werk en resultaten. Alles blijft lokaal per browser/apparaat, zonder wachtwoorden of centrale schoolsynchronisatie.
-Geen API-sleutel nodig. 14 voorbeeldhoofdstukken vormen nog geen volledig jaarprogramma.
+Oud werk blijft behouden. Nieuw toegevoegde namen worden apart aangeboden. Alles blijft lokaal per leerlingprofiel en browser; geen accountsynchronisatie. Geen API-sleutel nodig.
+De complete route en eindronde zijn in de browser getest, inclusief iPad-formaten. Een echte iPad/Safari- en leerlingpilot volgt nog.

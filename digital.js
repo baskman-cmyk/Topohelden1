@@ -50,7 +50,7 @@ function mount(id,host){active=id;const c=TopoBook.chapters.find(c=>c.id===id),d
 }
 function board(id){active=id;boardStep=0;teacher=true;$('digitalFocus').textContent='Groot op het digibord';document.body.classList.remove('board-focus');show('digitalBoard');drawBoard()}
 function drawBoard(){const c=TopoBook.chapters.find(c=>c.id===active),d=maps[link[active]],host=$('digitalBoardBody');host.replaceChildren();$('digitalBoardTitle').textContent=c.title;const names=['Verhaal','Uitleg','Samen kijken','Samen bespreken'];$('digitalSlideCount').textContent=(boardStep+1)+' / 4 · '+names[boardStep];
- if(boardStep===0)host.append(el('h2',c.storyTitle),el('p',c.story,'book-story'));
+ if(boardStep===0&&!window.StoryApp?.teacherStory(c,host))host.append(el('h2',c.storyTitle),el('p',c.story,'book-story'));
  if(boardStep===1){host.append(el('h2','Dit gaan we ontdekken'),el('p',c.goal));for(const p of c.paragraphs)host.append(el('p',p));const dl=el('dl',undefined,'lesson-terms');for(const [a,b] of Object.entries(c.terms))dl.append(el('dt',a),el('dd',b));host.append(dl)}
  if(boardStep===2){host.append(el('h2',d.title),picture(d,true));}
  if(boardStep===3){host.append(el('h2','Kijk, denk en vertel'),el('p','Wat zie je op de kaart of in het schema?'),el('p','Welk begrip helpt je om dit uit te leggen?'),el('p','Wat zou er veranderen als één onderdeel wegvalt?'),el('p','Ga daarna in je eigen digitale doeboek aan de slag.'))}
