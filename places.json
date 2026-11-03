@@ -1,0 +1,326 @@
+[
+  {
+    "id": "westnl-01",
+    "number": 1,
+    "name": "Zuid-Holland",
+    "type": "provincie",
+    "lat": 52.02,
+    "lon": 4.47,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-02",
+    "number": 2,
+    "name": "Noord-Holland",
+    "type": "provincie",
+    "lat": 52.61,
+    "lon": 4.78,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-03",
+    "number": 3,
+    "name": "Utrecht",
+    "type": "provincie",
+    "lat": 52.09,
+    "lon": 5.13,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-04",
+    "number": 4,
+    "name": "Goeree-Overflakkee",
+    "type": "regio",
+    "lat": 51.77,
+    "lon": 4.09,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-05",
+    "number": 5,
+    "name": "Utrechtse Heuvelrug",
+    "type": "landschap",
+    "lat": 52.04,
+    "lon": 5.35,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-06",
+    "number": 6,
+    "name": "Haarlemmermeer",
+    "type": "regio",
+    "lat": 52.3,
+    "lon": 4.68,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-07",
+    "number": 7,
+    "name": "Haringvliet",
+    "type": "water",
+    "lat": 51.77,
+    "lon": 4.27,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-08",
+    "number": 8,
+    "name": "Nieuwe Maas",
+    "type": "water",
+    "lat": 51.9,
+    "lon": 4.48,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-09",
+    "number": 9,
+    "name": "Alphen aan den Rijn",
+    "type": "stad",
+    "lat": 52.13,
+    "lon": 4.66,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-10",
+    "number": 10,
+    "name": "Amstelveen",
+    "type": "stad",
+    "lat": 52.3,
+    "lon": 4.86,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-11",
+    "number": 11,
+    "name": "Enkhuizen",
+    "type": "stad",
+    "lat": 52.7,
+    "lon": 5.29,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-12",
+    "number": 12,
+    "name": "Hoofddorp",
+    "type": "stad",
+    "lat": 52.3,
+    "lon": 4.69,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-13",
+    "number": 13,
+    "name": "Hoorn",
+    "type": "stad",
+    "lat": 52.64,
+    "lon": 5.06,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-14",
+    "number": 14,
+    "name": "Markermeer",
+    "type": "water",
+    "lat": 52.48,
+    "lon": 5.18,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-15",
+    "number": 15,
+    "name": "Nieuwegein",
+    "type": "stad",
+    "lat": 52.03,
+    "lon": 5.09,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-16",
+    "number": 16,
+    "name": "Vleuten",
+    "type": "stad",
+    "lat": 52.11,
+    "lon": 5.02,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-17",
+    "number": 17,
+    "name": "Randstad",
+    "type": "regio",
+    "lat": 52.12,
+    "lon": 4.75,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-18",
+    "number": 18,
+    "name": "Schiphol",
+    "type": "infrastructuur",
+    "lat": 52.31,
+    "lon": 4.76,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-19",
+    "number": 19,
+    "name": "Nieuwe Waterweg",
+    "type": "water",
+    "lat": 51.94,
+    "lon": 4.18,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-20",
+    "number": 20,
+    "name": "Rijn",
+    "type": "water",
+    "lat": 51.98,
+    "lon": 4.41,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-21",
+    "number": 21,
+    "name": "Noordzeekanaal",
+    "type": "water",
+    "lat": 52.47,
+    "lon": 4.72,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-22",
+    "number": 22,
+    "name": "Lek",
+    "type": "water",
+    "lat": 51.96,
+    "lon": 5.07,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-23",
+    "number": 23,
+    "name": "Amsterdam-Rijnkanaal",
+    "type": "water",
+    "lat": 52.1,
+    "lon": 5.06,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-24",
+    "number": 24,
+    "name": "Alkmaar",
+    "type": "stad",
+    "lat": 52.63,
+    "lon": 4.75,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-25",
+    "number": 25,
+    "name": "Amersfoort",
+    "type": "stad",
+    "lat": 52.16,
+    "lon": 5.39,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-26",
+    "number": 26,
+    "name": "Amsterdam",
+    "type": "stad",
+    "lat": 52.37,
+    "lon": 4.9,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-27",
+    "number": 27,
+    "name": "Delft",
+    "type": "stad",
+    "lat": 52.01,
+    "lon": 4.36,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-28",
+    "number": 28,
+    "name": "Den Haag",
+    "type": "stad",
+    "lat": 52.08,
+    "lon": 4.3,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-29",
+    "number": 29,
+    "name": "Den Helder",
+    "type": "stad",
+    "lat": 52.96,
+    "lon": 4.76,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-30",
+    "number": 30,
+    "name": "Dordrecht",
+    "type": "stad",
+    "lat": 51.81,
+    "lon": 4.67,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-31",
+    "number": 31,
+    "name": "Gouda",
+    "type": "stad",
+    "lat": 52.02,
+    "lon": 4.71,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-32",
+    "number": 32,
+    "name": "Haarlem",
+    "type": "stad",
+    "lat": 52.38,
+    "lon": 4.64,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-33",
+    "number": 33,
+    "name": "Leiden",
+    "type": "stad",
+    "lat": 52.16,
+    "lon": 4.49,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-34",
+    "number": 34,
+    "name": "Rotterdam",
+    "type": "stad",
+    "lat": 51.92,
+    "lon": 4.48,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-35",
+    "number": 35,
+    "name": "Utrecht",
+    "type": "stad",
+    "lat": 52.09,
+    "lon": 5.12,
+    "geometryStatus": "representative_point_unverified"
+  },
+  {
+    "id": "westnl-36",
+    "number": 36,
+    "name": "Zaandam",
+    "type": "stad",
+    "lat": 52.44,
+    "lon": 4.83,
+    "geometryStatus": "representative_point_unverified"
+  }
+]
