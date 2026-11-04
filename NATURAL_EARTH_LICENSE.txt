@@ -1,0 +1,9 @@
+Natural Earth physical land and lake overview context
+
+Natural Earth stelt zijn vector- en rastergegevens beschikbaar als publiek domein. De Topohelden-overzichtskust is afgeleid van de land- en merenbestanden op schaal 1:10 miljoen, uitgesneden rond Nederland. Leerobjecten van Kadaster/PDOK, BAG en RWS hebben hun eigen bronvermelding/licentie.
+
+Bron en voorwaarden:
+https://www.naturalearthdata.com/about/terms-of-use/
+https://github.com/nvkelso/natural-earth-vector
+
+Dit is gegeneraliseerde overzichtsgeografie; niet bedoeld voor navigatie of precieze oevermetingen.
