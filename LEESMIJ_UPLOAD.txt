@@ -1,5 +1,32 @@
-Topohelden – uitbreiding kindverhalen, 4 november 2026.
-Nu 21 kindverhalen met 63 leesdelen en vragen. Nieuw: VS, Mexico, Curaçao, een tweede verhaal over Brazilië, Fiji, Zuid-Afrika, Egypte, Rusland, China, India, Indonesië, Marokko en Turkije.
-Kies een kind bij de regioles of ga via Aardrijkskunde naar de verhalen per gebied. Je keuze en leesplek blijven per profiel bewaard.
-Pak deze zip uit en upload alle losse bestanden samen; vervang de oude bestanden. Geen mappen of kaart-API-key nodig.
-Gebruik dezelfde website, browser en leerling om bestaande voortgang te behouden. Niet automatisch live gezet. Echte iPad-/leerlingpilot staat nog open.
+TOPOHELDEN 1.0 – COMPLETE UPLOADVERSIE
+4 november 2026
+
+Deze zip bevat de volledige uitvoerbare app, inclusief kaarten, lessen, 21 kindverhalen, eigen lijsten, herhaling en de nieuwe werkvormen. Alle bestanden staan los; er zijn geen mappen nodig. De ruwe brondata en ontwikkeltests zijn al verwerkt in de runtimebestanden en hoeven niet op de website te staan.
+
+UPLOAD
+1. Pak deze zip uit.
+2. Open de eventueel door je telefoon gemaakte buitenste uitpakmap.
+3. Upload alle 43 losse bestanden samen en vervang de oude bestanden.
+4. Herlaad de website. Gebruik dezelfde website, browser en hetzelfde profiel om bestaande gegevens te behouden.
+
+WAAR VIND JE DE NIEUWE ONDERDELEN?
+- Opdrachten: Eigen leerlijsten en Spelen en ontdekken.
+- Instellingen: leerroute/lijsten aanpassen, volledige back-up downloaden en een back-up terugzetten.
+- Voortgang: toetsgeschiedenis en CSV-export.
+- Groep 7/8: korte herhaling van eerder geoefende namen. Eigen opdrachten krijgen ook herhaalmomenten.
+
+EXTRA WERKVORMEN
+Welke plek bedoel ik? – ja/nee-vragen bij bekende namen.
+Kaartdetective – contour of kaartfragment herkennen, daarna grotere context bekijken.
+Mijn reisbericht – een weetje, bron en eigen reden vastleggen; bewaren als tekst of via print/PDF.
+
+GEGEVENS BEWAREN
+Alles blijft lokaal op dit apparaat. Maak een back-up voordat je browsergegevens wist of van apparaat wisselt. De back-up neemt profielen, opdrachten, notities, oefensessies en toetsgeschiedenis mee. Herstel toont eerst een overzicht en vervangt pas na de herstelknop de huidige Topohelden-gegevens. Er is geen automatische cloudsync. Profielen zijn geen beveiligde schoolaccounts.
+
+TOETSEN
+Nieuwe uitslagen bewaren de vraaggegevens en relevante leerobjectgeometrie. Eerdere lijstversies en uitslagen veranderen niet door het aanpassen van een eigen lijst. Oude nog beschikbare laatste uitslagen zijn als overgenomen herkenbaar; reeds overschreven uitslagen zijn niet achteraf terug te halen.
+
+OPLEVERING
+De lokale MVP is technisch gecontroleerd. Echte iPad-/leerlingenacceptatie en onafhankelijke inhoudsreview staan nog open. Accounts, schoolbeheer, synchronisatie, import en een volledige SLO-bibliotheek blijven de afgesproken vervolgfases. De app is geen volledige schoolmethode of genormeerde Cito-toets.
+
+Deze download wordt niet automatisch live gezet.
