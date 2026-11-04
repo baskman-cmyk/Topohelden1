@@ -32,7 +32,7 @@
   const id=cursor(activeGrade),c=byId(id),ids=route(activeGrade),n=ids.filter(id=>state.sessions[id]?.finished).length;
   $('bookHomeTitle').textContent=data.titles[activeGrade];$('bookHomeLesson').textContent='Les '+(ids.indexOf(id)+1)+' van '+ids.length+' · '+c.title;
   $('bookHomeProgress').textContent=n+' van '+ids.length+' lessen doorlopen. Je plek in het boek wordt automatisch bewaard.';
-  $('bookContinue').onclick=()=>open(id);$('bookHomeButton').textContent=state.sessions[id]?'Ga verder met je doeboek':'Begin je doeboek';
+  $('bookContinue').onclick=()=>open(id);$('bookHomeButton').textContent=state.sessions[id]?'Ga verder met je leerroute':'Begin je leerroute';
  }
  function renderOverview(){const host=$('bookChapters');host.replaceChildren();$('bookOverviewTitle').textContent=data.titles[activeGrade];for(const [i,id] of route(activeGrade).entries()){const c=byId(id),card=text('div',undefined,'panel');card.append(text('h2',(i+1)+'. '+c.title),text('p',c.goal),text('p',state.sessions[id]?.finished?'Doorlopen ✓':'Nog te ontdekken','small muted'),btn('Open deze les',()=>open(id),'primary'));host.append(card)}}
  function open(id){const c=byId(id);if(!c)return;current=id;state.cursor[c.grade]=id;session(c);save();show('book');render();window.scrollTo(0,0)}
@@ -76,7 +76,7 @@
   const score=s.answers.reduce((n,a,i)=>n+(a===c.questions[i].answer),0);host.append(text('h2','Je hebt deze les doorlopen'),text('p','Oefenen: '+score+' van '+c.questions.length+' goed. De uitleg blijft beschikbaar.'));
   const reflection=text('textarea');reflection.rows=3;reflection.maxLength=600;reflection.id='bookReflection';reflection.value=s.reflection;reflection.oninput=e=>{s.reflection=e.target.value.slice(0,600);save()};const label=text('label','Wat ontdekte je, of aan welke plek doet dit je denken? (Mag je overslaan.)');label.htmlFor=reflection.id;host.append(label,reflection,text('p','Je eigen ervaring krijgt geen cijfer en blijft op dit apparaat.','small muted'));
   const mode=program(c.grade).tests[c.id]||'none';if(mode!=='none'&&(!s.test?.submitted||s.test.mode!==mode)){host.append(text('p','Voor deze les staat een '+(mode==='knowledge'?'kennistoets':'toepassingstoets')+' klaar.'),btn('Maak de toets',()=>startTest(mode),'primary'));return}
-  s.finished=true;save();const ids=route(c.grade),i=ids.indexOf(c.id),next=ids[i+1];host.append(btn(next?'Volgende les: '+byId(next).title:'Bekijk je doeboek',()=>next?open(next):(show('bookOverview'),renderOverview()),'primary'));host.append(btn('Oefenvragen opnieuw',()=>{s.answers=c.questions.map(()=>null);s.step=0;s.phase=2;save();render()}),btn('Bekijk deze les opnieuw',()=>{s.phase=0;save();render()}));
+  s.finished=true;save();const ids=route(c.grade),i=ids.indexOf(c.id),next=ids[i+1];host.append(btn(next?'Volgende les: '+byId(next).title:'Bekijk je leerroute',()=>next?open(next):(show('bookOverview'),renderOverview()),'primary'));host.append(btn('Oefenvragen opnieuw',()=>{s.answers=c.questions.map(()=>null);s.step=0;s.phase=2;save();render()}),btn('Bekijk deze les opnieuw',()=>{s.phase=0;save();render()}));
   if(s.test?.submitted)host.append(text('p','Toets: '+s.test.score.correct+' van '+s.test.score.total+' onderdelen juist.','small'));
  }
  function knowledge(c){const entries=Object.entries(c.terms);return entries.slice(0,3).map(([word],i)=>({prompt:'Welke uitleg past bij '+word+'?',options:entries.map(x=>x[1]),answer:i}))}
@@ -85,7 +85,7 @@
   host.append(text('p',t.submitted?'Je toets is nagekeken.':'Werk zelfstandig. Je kunt je antwoorden wijzigen. Je krijgt pas na inleveren uitleg.','muted'));
   if(t.mode==='knowledge'){knowledge(c).forEach((q,i)=>{const label=text('label',q.prompt),select=text('select');select.id='knowledge-'+i;const empty=text('option','Kies je antwoord');empty.value='';select.append(empty);q.options.forEach((v,j)=>{const o=text('option',v);o.value=j;select.append(o)});select.value=t.answers[i]??'';select.disabled=t.submitted;select.onchange=e=>{t.answers[i]=e.target.value===''?null:Number(e.target.value);save()};label.htmlFor=select.id;host.append(label,select);if(t.submitted)host.append(text('p',(t.answers[i]===q.answer?'✓ Goed. ':'Juist: ')+q.options[q.answer],'small'))})}
   else{const box=text('div');host.append(box);renderTask(c.testActivity,box,t.task,true,()=>{save();renderTest()})}
-  if(!t.submitted)host.append(btn('Lever mijn toets in',submitTest,'primary'));else host.append(text('h2',t.score.correct+' van '+t.score.total+' onderdelen juist'),text('p',t.score.explanation||'Bekijk welke begrippen je nog eens wilt lezen.'),btn('Verder in mijn doeboek',()=>{show('book');render()},'primary'));
+  if(!t.submitted)host.append(btn('Lever mijn toets in',submitTest,'primary'));else host.append(text('h2',t.score.correct+' van '+t.score.total+' onderdelen juist'),text('p',t.score.explanation||'Bekijk welke begrippen je nog eens wilt lezen.'),btn('Verder in mijn leerroute',()=>{show('book');render()},'primary'));
   host.append(text('p','Dit is een korte lestoets over de getoonde inhoud, geen volledige kerndoelen- of 36-namentoets.','small muted'));
  }
  function submitTest(){const c=byId(current),t=session(c).test;if(!t||t.submitted)return;let score;
@@ -134,6 +134,6 @@
   }host.append(btn('Standaardopbouw terugzetten',()=>{delete state.programs[activeGrade];save();settings();renderHome()}));
  }
  function reorder(id,delta){const p=clone(program(activeGrade)),i=p.order.indexOf(id),j=i+delta;if(i<0||j<0||j>=p.order.length)return;[p.order[i],p.order[j]]=[p.order[j],p.order[i]];state.programs[activeGrade]=p;save();settings();renderHome()}
- window.BookApp={continueBook,open,renderHome,renderOverview,settings,onActivityChange,go,answerPractice,startTest,submitTest,scoreTask,snapshot:()=>clone(state),renderTest,renderProgress:()=>{const host=$('bookProgress');host.replaceChildren();host.append(text('h2','Mijn doeboek · groep '+activeGrade));for(const id of route(activeGrade)){const c=byId(id),s=state.sessions[id];host.append(text('p',c.title+': '+(s?.finished?'doorlopen':s?'bezig':'nog te ontdekken')+(s?.test?.submitted?' · toets '+s.test.score.correct+'/'+s.test.score.total:'')))}}};
+ window.BookApp={continueBook,open,renderHome,renderOverview,settings,onActivityChange,go,answerPractice,startTest,submitTest,scoreTask,snapshot:()=>clone(state),renderTest,renderProgress:()=>{const host=$('bookProgress');host.replaceChildren();host.append(text('h2','Mijn opdrachten · groep '+activeGrade));for(const id of route(activeGrade)){const c=byId(id),s=state.sessions[id];host.append(text('p',c.title+': '+(s?.finished?'doorlopen':s?'bezig':'nog te ontdekken')+(s?.test?.submitted?' · toets '+s.test.score.correct+'/'+s.test.score.total:'')))}}};
  renderHome();
 })();

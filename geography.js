@@ -47,40 +47,18 @@
   currentId=id;if(!state.sessions[id])state.sessions[id]=fresh(l);save();show('lesson');render();
  }
  function render(){
-  const l=byId(currentId);if(!l)return;
-  const s=state.sessions[currentId],body=el('lessonBody');body.replaceChildren();
-  el('lessonTitle').textContent=l.title;el('lessonSubtitle').textContent='Groep '+l.grade+' · '+l.goal;
-  if(s.phase==='reading'){
-   body.append(tag('h2','Dit ga je leren'),tag('p',l.goal,'lesson-goal'));
-   for(const p of l.paragraphs)body.append(tag('p',p));
-   if(l.diagram==='map')diagram(body);
-   const terms=tag('dl',undefined,'lesson-terms');for(const [word,meaning] of Object.entries(l.terms))terms.append(tag('dt',word),tag('dd',meaning));body.append(terms);
-   const details=tag('details'),summary=tag('summary','Bronnen en verantwoording');details.append(summary,tag('p','Eigen uitleg en oefenvragen van Topohelden. De onderstaande bronnen zijn gebruikt voor controle van de feiten. De groepsindeling is een voorstel.','small'));
-   for(const src of l.sources){const a=tag('a',src.title);a.href=src.url;a.target='_blank';a.rel='noopener noreferrer';const p=tag('p');p.append(a);details.append(p)}body.append(details);
-   if(l.mission&&window.MissionsApp){const missionButton=tag('button','Probeer het met kaartjes','secondary');missionButton.onclick=()=>window.MissionsApp.open(l.mission);body.append(missionButton)}
-   const b=tag('button','Start de '+l.questions.length+' vragen','primary');b.onclick=()=>begin();body.append(b);
-  }else if(s.phase==='quiz'){
-   const q=l.questions[s.step],chosen=s.answers[s.step];
-   body.append(tag('p','Vraag '+(s.step+1)+' van '+l.questions.length+' · '+(q.type==='boolean'?'Waar of niet waar':'Kies het beste antwoord'),'small muted'));
-   const meter=tag('div',undefined,'progress'),fill=tag('div');fill.style.width=100*s.step/l.questions.length+'%';meter.append(fill);body.append(meter,tag('h2',q.prompt));
-   if(l.diagram==='map')diagram(body);
-   const answers=tag('div',undefined,'lesson-options');
-   const order=q.type==='boolean'?q.options.map((_,i)=>i):shuffle(q.options.map((_,i)=>i));
-   for(const index of order){const b=tag('button',q.options[index],'lesson-answer');b.disabled=chosen!==null;b.setAttribute('aria-pressed',String(chosen===index));b.onclick=()=>answer(index);if(chosen!==null&&index===q.answer)b.classList.add('correct');if(chosen===index&&chosen!==q.answer)b.classList.add('incorrect');answers.append(b)}body.append(answers);
-   if(chosen!==null){const feedback=tag('p',(chosen===q.answer?'✓ Goed. ':'Nog niet. Het juiste antwoord is: '+q.options[q.answer]+'. ')+q.explanation,'lesson-feedback');feedback.setAttribute('role','status');body.append(feedback);const next=tag('button',s.step===l.questions.length-1?'Bekijk resultaat':'Volgende vraag','primary');next.onclick=()=>advance();body.append(next)}
-  }else{
-   finish(l,s);body.append(tag('h2',result(l,s)+' van '+l.questions.length+' goed'),tag('p','Dit is een oefenresultaat, geen cijfer voor een toets.'));
-   for(let i=0;i<l.questions.length;i++)if(s.answers[i]!==l.questions[i].answer){const q=l.questions[i],card=tag('div',undefined,'lesson-review');card.append(tag('strong',q.prompt),tag('p','Jouw antwoord: '+q.options[s.answers[i]]),tag('p','Juist: '+q.options[q.answer]),tag('p',q.explanation));body.append(card)}
-   if(result(l,s)===l.questions.length)body.append(tag('p','Alles goed in deze reeks. Je kunt later opnieuw oefenen.'));
-   const again=tag('button','Les opnieuw bekijken','secondary');again.onclick=()=>restart();body.append(again);
-  }
+  const l=byId(currentId);if(!l)return;const s=state.sessions[currentId],body=el('lessonBody');if(s.phase==='reading'){s.phase='quiz';save()}body.replaceChildren();el('lessonTitle').textContent=l.title;el('lessonSubtitle').textContent='Groep '+l.grade+' · '+l.goal;
+  const layout=tag('div',undefined,'geography-layout'),left=tag('article',undefined,'lesson-reading'),right=tag('aside',undefined,'west-question-panel geography-question');layout.append(left,right);body.append(layout);if(l.diagram==='map')diagram(left);else if(window.TopoVisuals)left.append(TopoVisuals.picture(l));left.append(tag('h2','Dit ga je leren'),tag('p',l.goal,'lesson-goal'));for(const paragraph of l.paragraphs)left.append(tag('p',paragraph));const terms=tag('dl',undefined,'lesson-terms');for(const[word,meaning]of Object.entries(l.terms))terms.append(tag('dt',word),tag('dd',meaning));left.append(terms);const details=tag('details');details.append(tag('summary','Bronnen en verantwoording'));for(const src of l.sources){const a=tag('a',src.title);a.href=src.url;a.target='_blank';a.rel='noopener noreferrer';const line=tag('p');line.append(a);details.append(line)}left.append(details);
+  if(s.phase==='quiz'){const q=l.questions[s.step],chosen=s.answers[s.step];right.append(tag('p','Opdracht '+(s.step+1)+' van '+l.questions.length,'book-kicker'),tag('h2',q.prompt));const meter=tag('div',undefined,'progress'),fill=tag('div');fill.style.width=100*s.step/l.questions.length+'%';meter.append(fill);right.append(meter);const answers=tag('div',undefined,'lesson-options'),indices=q.options.map((_,i)=>i),offset=(l.id.length+s.step)%indices.length,order=indices.slice(offset).concat(indices.slice(0,offset));for(const index of order){const b=tag('button',q.options[index],'lesson-answer');b.disabled=chosen!==null;b.setAttribute('aria-pressed',String(chosen===index));b.onclick=()=>answer(index);if(chosen!==null&&index===q.answer)b.classList.add('correct');if(chosen===index&&chosen!==q.answer)b.classList.add('incorrect');answers.append(b)}right.append(answers);if(chosen!==null){const feedback=tag('p',(chosen===q.answer?'✓ Goed. ':'Nog niet. Het juiste antwoord is: '+q.options[q.answer]+'. ')+q.explanation,'lesson-feedback');feedback.setAttribute('role','status');right.append(feedback);const next=tag('button',s.step===l.questions.length-1?'Bekijk resultaat':'Volgende vraag','primary');next.onclick=()=>advance();right.append(next)}right.append(tag('p','Je mag de afbeelding en uitleg blijven gebruiken. Dit zijn oefenopdrachten.','small muted'));
+  }else{finish(l,s);right.append(tag('h2',result(l,s)+' van '+l.questions.length+' goed'),tag('p','Dit is een oefenresultaat, geen toetscijfer.'));for(let i=0;i<l.questions.length;i++)if(s.answers[i]!==l.questions[i].answer){const q=l.questions[i],card=tag('div',undefined,'lesson-review');card.append(tag('strong',q.prompt),tag('p','Juist: '+q.options[q.answer]),tag('p',q.explanation));right.append(card)}const again=tag('button','Opdrachten opnieuw','secondary');again.onclick=()=>restart();right.append(again)}if(l.mission&&window.MissionsApp){const b=tag('button','Probeer een kaartopdracht','secondary');b.onclick=()=>MissionsApp.open(l.mission);right.append(b)}
  }
+
  function begin(){const s=state.sessions[currentId];if(!s||s.phase!=='reading')return;s.phase='quiz';save();render()}
  function answer(index){const l=byId(currentId),s=state.sessions[currentId];if(!l||s?.phase!=='quiz'||s.answers[s.step]!==null||!Number.isInteger(index)||index<0||index>=l.questions[s.step].options.length)return;s.answers[s.step]=index;save();render()}
  function advance(){const l=byId(currentId),s=state.sessions[currentId];if(!l||s?.phase!=='quiz'||s.answers[s.step]===null)return;s.step++;if(s.step===l.questions.length)s.phase='result';save();render()}
  function finish(l,s){if(s.recorded)return;const score=result(l,s),old=state.progress[l.id];state.progress[l.id]={version:l.version,attempts:(old?.attempts||0)+1,best:Math.max(old?.best||0,score),last:score};s.recorded=true;save();renderOverview(activeGrade)}
  function restart(){const l=byId(currentId);if(!l)return;state.sessions[currentId]=fresh(l);save();render()}
  function renderProgress(grade){const host=el('geographyProgress');host.replaceChildren();host.append(tag('h2','Aardrijkskunde · groep '+grade));for(const l of lessons.filter(l=>l.grade===grade)){const p=state.progress[l.id];host.append(tag('p',l.title+': '+(p?'beste resultaat '+p.best+'/'+l.questions.length+' · laatst '+p.last+'/'+l.questions.length:'nog niet afgerond')))}}
- window.GeographyApp={renderOverview,renderProgress,open,begin,answer,advance,restart};
+ window.GeographyApp={renderOverview,renderProgress,open,begin,answer,advance,restart,snapshot:()=>JSON.parse(JSON.stringify(state))};
  renderOverview(activeGrade);
 })();
