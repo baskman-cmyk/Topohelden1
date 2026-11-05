@@ -1,4 +1,4 @@
-TOPOHELDEN 2.0 — KWALITEITSRONDE EN DUIDELIJKE LEERROUTE
+TOPOHELDEN 2.1 — KWALITEITSRONDE EN DUIDELIJKE LEERROUTE
 5 november 2026
 
 Dit is de complete uitvoerbare app met alle 45 verhaalillustraties en lokale kaartdata. Geen kaart-API-sleutel nodig. Alle 93 bestanden staan los; je hoeft geen mappen te uploaden.
@@ -7,6 +7,14 @@ UPLOAD
 1. Pak deze zip uit.
 2. Upload alle 93 losse bestanden samen, ter vervanging van de vorige versie.
 3. Herlaad de website. Gebruik dezelfde website, browser en hetzelfde profiel om de bestaande lokale gegevens te behouden.
+
+NIEUW IN 2.1
+- Letterknoppen staan in A-B-C-volgorde; vraagvolgorde en plaats/letter-koppeling blijven variëren.
+- Alle echte kaartlocaties worden vooraf vrijgehouden van andere letterballen. Verwijslijnen liggen achter stippen en letters.
+- Bij een gele markering verdwijnen de kaartletters.
+- Slim oefenen: eerst maximaal vier nieuwe namen, daarna waar mogelijk vijf of zes plaatsen, met drie of vier nieuwe en bekende namen erbij. Bij veel fouten wordt de set kleiner en komen er geen nieuwe namen bij.
+- Nieuwe en bekende namen staan duidelijk aangegeven; het voorbeeldscherm is compacter.
+- Kleine gebieden/categorieën worden niet aangevuld met onbekende plaatsen uit andere provincies.
 
 DE NIEUWE ROUTE
 - Eigen omgeving / Nederland / Europa / Wereld: geen verplichte groepskeuze voor leerlingen.
