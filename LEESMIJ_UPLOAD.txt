@@ -1,56 +1,33 @@
-TOPOHELDEN 1.3.1 – COMPLETE UPLOADVERSIE
+TOPOHELDEN 2.0 — KWALITEITSRONDE EN DUIDELIJKE LEERROUTE
 5 november 2026
 
-Deze zip is groter door de 45 ingesloten WebP-illustraties. Hij bevat de volledige uitvoerbare app, inclusief kaarten, lessen, 21 kindverhalen, eigen lijsten, herhaling en de nieuwe werkvormen. Alle bestanden staan los; er zijn geen mappen nodig. De ruwe brondata en ontwikkeltests zijn al verwerkt in de runtimebestanden en hoeven niet op de website te staan.
+Dit is de complete uitvoerbare app met alle 45 verhaalillustraties en lokale kaartdata. Geen kaart-API-sleutel nodig. Alle 93 bestanden staan los; je hoeft geen mappen te uploaden.
 
 UPLOAD
 1. Pak deze zip uit.
-2. Open de eventueel door je telefoon gemaakte buitenste uitpakmap.
-3. Upload alle 92 losse bestanden samen en vervang de oude bestanden.
-4. Herlaad de website. Gebruik dezelfde website, browser en hetzelfde profiel om bestaande gegevens te behouden.
+2. Upload alle 93 losse bestanden samen, ter vervanging van de vorige versie.
+3. Herlaad de website. Gebruik dezelfde website, browser en hetzelfde profiel om de bestaande lokale gegevens te behouden.
 
-NIEUW IN 1.3.1
-- Tien gemarkeerde illustraties hersteld: handen, armen, positie ten opzichte van muurtjes en dubbel hekwerk.
-- Overige 35 verhaalillustraties en alle lessen en opdrachten behouden.
+DE NIEUWE ROUTE
+- Eigen omgeving / Nederland / Europa / Wereld: geen verplichte groepskeuze voor leerlingen.
+- Nederland: West, Noord, Oost en Zuid; daarna de provincies. De regio’s zijn vrij te kiezen, zonder vaste periodevolgorde.
+- Binnen een gebied: Kaart en topografie of Verhalen en aardrijkskunde.
+- Eigen lijsten blijven bereikbaar. Technische groep-/periodecodes blijven bewaard voor bestaande opdrachten en resultaten; ze sturen de hoofdroute niet meer.
 
-NIEUW IN 1.3
-- Alle 45 verhalen hebben een eigen uitgewerkte, unieke prentenboekillustratie: 24 aardrijkskundeverhalen en 21 landenvertellers.
-- De beelden zijn visueel gecontroleerd en worden lokaal meegeleverd; geen beeld-API of sleutel nodig.
-- Illustratie en tekst links, vragen rechts; kaarten blijven apart toegankelijk.
-- Bestaande voortgang, antwoorden en profielen behouden dezelfde opslagsleutels.
+BELANGRIJKSTE VERBETERINGEN
+- Eigen omgeving: tekst naast de kaart; aanwijsvragen alleen op de kaart, met toetsenbordbediening op de kaartpunten.
+- Vier lokale aardrijkskundeverhalen opnieuw geschreven met concrete uitleg, passende vragen en feedback. Geen willekeurige wijkkaart bij het strandverhaal.
+- Provincie-oefeningen blijven binnen de gekozen provincie, ook bij herhalen en na herladen. Oude rondes met vreemde namen worden opnieuw samengesteld.
+- Vraagvolgorde en kaartletters variëren per ronde. Binnen een ronde blijven ze bij herladen gelijk.
+- Hoofdsteden hebben een ster; zeven verkeerd geplaatste stadsankers zijn hersteld. 61 unieke Nederlandse stadsankers getoetst tegen de getoonde land- en watervlakken.
+- Blauwe liggingskaarten hersteld; naamlabels krijgen ruimte en echte stadsstippen maken de ligging zichtbaar.
+- Werelddeelvlakken kleuren mee. Antarctica staat niet meer alleen in een leerset. Niet direct twee vragen over dezelfde plek; bij heel kleine sets geen triviale naamronde.
+- Quito, Singapore en Accra worden als vergelijking bij evenaar/nulmeridiaan uitgelegd.
+- Poldervraag hersteld en vooraf uitgelegd: dijk houdt buitenwater tegen; gemaal pompt water weg.
+- Saba/Curaçao: uitgebreid verhaal met genoeg informatie over landschap, klimaat en bestuur voor de drie opdrachten.
 
-NIEUW IN 1.2
-- 24 aanvullende aardrijkskundeverhalen voor groep 5–8, met 72 gesloten opdrachten en 24 open uitlegopdrachten.
-- Deze oorspronkelijke schematische verhaalbeelden zijn in 1.3 vervangen door uitgewerkte illustraties.
-- Kaartlab: Nederlandse dichtheidscijfers 2024, historische wereldinwonertallen, talenvoorbeelden en landschapsankers.
-- Atlas: register, aliaszoeken, soortfilter, kaartvakken en schaal.
-- Instellingen: kernlijsten controleren en als CSV downloaden.
-- Volledige bestaande app en oude verhalen blijven opgenomen.
+VOORTGANG
+De bestaande profielen, lijsten, notities en toetsresultaten blijven behouden. Bij de vier herschreven aardrijkskundeverhalen van Eigen omgeving, Het land achter de dijk en Twee eilanden, twee verhalen beginnen de gewijzigde vragen opnieuw. De oude aardrijkskundestatus is apart lokaal gearchiveerd en gaat mee in een volledige back-up. De vier oorspronkelijke kaartbasislessen van Eigen omgeving behouden hun antwoorden.
 
-EERDER TOEGEVOEGD IN 1.1
-- Alle 21 landenverhalen bevatten extra aardrijkskunde, natuur of geschiedenis, verbonden met ligging.
-- Elk verhaal heeft een geheugensteuntje en een inklapbare extra begripsvraag: Denk verder – land en omgeving. Eerdere leesvoortgang blijft behouden.
-- Aardrijkskunde, groep 6: Dezelfde plek, een andere kaart, met overzichtskaart, bevolkingskaart, voorbeeldtabel en vier vragen.
-- Instellingen: beknopte uitleg over aansluiting op kerndoelen. De app ondersteunt onderdelen van de SLO-richting, maar is niet volledig kerndoeldekkend. De detailcontrole staat in het apart geleverde verslag.
-
-WAAR VIND JE DE OVERIGE ONDERDELEN?
-- Opdrachten: Eigen leerlijsten en Spelen en ontdekken.
-- Instellingen: leerroute/lijsten aanpassen, volledige back-up downloaden en een back-up terugzetten.
-- Voortgang: toetsgeschiedenis en CSV-export.
-- Groep 7/8: korte herhaling van eerder geoefende namen. Eigen opdrachten krijgen ook herhaalmomenten.
-
-EXTRA WERKVORMEN
-Welke plek bedoel ik? – ja/nee-vragen bij bekende namen.
-Kaartdetective – contour of kaartfragment herkennen, daarna grotere context bekijken.
-Mijn reisbericht – een weetje, bron en eigen reden vastleggen; bewaren als tekst of via print/PDF.
-
-GEGEVENS BEWAREN
-Alles blijft lokaal op dit apparaat. Maak een back-up voordat je browsergegevens wist of van apparaat wisselt. De back-up neemt profielen, opdrachten, notities, oefensessies en toetsgeschiedenis mee. Herstel toont eerst een overzicht en vervangt pas na de herstelknop de huidige Topohelden-gegevens. Er is geen automatische cloudsync. Profielen zijn geen beveiligde schoolaccounts.
-
-TOETSEN
-Nieuwe uitslagen bewaren de vraaggegevens en relevante leerobjectgeometrie. Eerdere lijstversies en uitslagen veranderen niet door het aanpassen van een eigen lijst. Oude nog beschikbare laatste uitslagen zijn als overgenomen herkenbaar; reeds overschreven uitslagen zijn niet achteraf terug te halen.
-
-OPLEVERING
-De lokale MVP is technisch gecontroleerd. Echte iPad-/leerlingenacceptatie en onafhankelijke inhoudsreview staan nog open. Accounts, schoolbeheer, synchronisatie, import en een volledige SLO-bibliotheek blijven de afgesproken vervolgfases. De app is geen volledige schoolmethode of genormeerde Cito-toets.
-
-Deze download wordt niet automatisch live gezet.
+CONTROLE
+Automatische doorlooptests en schermcontroles uitgevoerd. De uitgepakte uploadversie is apart getest. Dit vervangt geen gebruikerstest op een fysieke iPad/Safari of onafhankelijke inhoudelijke beoordeling. Volledige kerndoeldekking wordt niet geclaimd.
