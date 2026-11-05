@@ -1,15 +1,39 @@
-TOPOHELDEN 1.0 – COMPLETE UPLOADVERSIE
-4 november 2026
+TOPOHELDEN 1.3.1 – COMPLETE UPLOADVERSIE
+5 november 2026
 
-Deze zip bevat de volledige uitvoerbare app, inclusief kaarten, lessen, 21 kindverhalen, eigen lijsten, herhaling en de nieuwe werkvormen. Alle bestanden staan los; er zijn geen mappen nodig. De ruwe brondata en ontwikkeltests zijn al verwerkt in de runtimebestanden en hoeven niet op de website te staan.
+Deze zip is groter door de 45 ingesloten WebP-illustraties. Hij bevat de volledige uitvoerbare app, inclusief kaarten, lessen, 21 kindverhalen, eigen lijsten, herhaling en de nieuwe werkvormen. Alle bestanden staan los; er zijn geen mappen nodig. De ruwe brondata en ontwikkeltests zijn al verwerkt in de runtimebestanden en hoeven niet op de website te staan.
 
 UPLOAD
 1. Pak deze zip uit.
 2. Open de eventueel door je telefoon gemaakte buitenste uitpakmap.
-3. Upload alle 43 losse bestanden samen en vervang de oude bestanden.
+3. Upload alle 92 losse bestanden samen en vervang de oude bestanden.
 4. Herlaad de website. Gebruik dezelfde website, browser en hetzelfde profiel om bestaande gegevens te behouden.
 
-WAAR VIND JE DE NIEUWE ONDERDELEN?
+NIEUW IN 1.3.1
+- Tien gemarkeerde illustraties hersteld: handen, armen, positie ten opzichte van muurtjes en dubbel hekwerk.
+- Overige 35 verhaalillustraties en alle lessen en opdrachten behouden.
+
+NIEUW IN 1.3
+- Alle 45 verhalen hebben een eigen uitgewerkte, unieke prentenboekillustratie: 24 aardrijkskundeverhalen en 21 landenvertellers.
+- De beelden zijn visueel gecontroleerd en worden lokaal meegeleverd; geen beeld-API of sleutel nodig.
+- Illustratie en tekst links, vragen rechts; kaarten blijven apart toegankelijk.
+- Bestaande voortgang, antwoorden en profielen behouden dezelfde opslagsleutels.
+
+NIEUW IN 1.2
+- 24 aanvullende aardrijkskundeverhalen voor groep 5–8, met 72 gesloten opdrachten en 24 open uitlegopdrachten.
+- Deze oorspronkelijke schematische verhaalbeelden zijn in 1.3 vervangen door uitgewerkte illustraties.
+- Kaartlab: Nederlandse dichtheidscijfers 2024, historische wereldinwonertallen, talenvoorbeelden en landschapsankers.
+- Atlas: register, aliaszoeken, soortfilter, kaartvakken en schaal.
+- Instellingen: kernlijsten controleren en als CSV downloaden.
+- Volledige bestaande app en oude verhalen blijven opgenomen.
+
+EERDER TOEGEVOEGD IN 1.1
+- Alle 21 landenverhalen bevatten extra aardrijkskunde, natuur of geschiedenis, verbonden met ligging.
+- Elk verhaal heeft een geheugensteuntje en een inklapbare extra begripsvraag: Denk verder – land en omgeving. Eerdere leesvoortgang blijft behouden.
+- Aardrijkskunde, groep 6: Dezelfde plek, een andere kaart, met overzichtskaart, bevolkingskaart, voorbeeldtabel en vier vragen.
+- Instellingen: beknopte uitleg over aansluiting op kerndoelen. De app ondersteunt onderdelen van de SLO-richting, maar is niet volledig kerndoeldekkend. De detailcontrole staat in het apart geleverde verslag.
+
+WAAR VIND JE DE OVERIGE ONDERDELEN?
 - Opdrachten: Eigen leerlijsten en Spelen en ontdekken.
 - Instellingen: leerroute/lijsten aanpassen, volledige back-up downloaden en een back-up terugzetten.
 - Voortgang: toetsgeschiedenis en CSV-export.
